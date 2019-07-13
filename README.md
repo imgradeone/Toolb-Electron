@@ -16,4 +16,4 @@
 
 ## 可以先尝试一下 Toolb 的 Android 版。
 
-<a href="https://github.com/imgradeone/ToolbReleases/releases/latest">![](https://img.shields.io/badge/download-forAndroid-0080ff.svg)</a>
+<a href="https://github.com/imgradeone/ToolbReleases/releases/latest">![](https://img.shields.io/badge/download-forAndroid-0080ff.svg?style=for-the-badge)</a>
