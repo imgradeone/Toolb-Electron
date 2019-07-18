@@ -8,9 +8,7 @@
 
 # 目前的进度
 
-还没折腾好 Electron…XD
-
-等到我玩一下 Electron 再开始这个项目吧。
+正在尝试 Electron + Vue + Element UI
 
 # 所以现在怎么办？
 
