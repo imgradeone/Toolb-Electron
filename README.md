@@ -4,11 +4,11 @@
 
 电脑上的 Toolb，即将到来。
 
-![](https://img.shields.io/badge/coming-soon-fa4694.svg)
+![](https://img.shields.io/badge/oof-cancelled-fa4694.svg)
 
 # 目前的进度
 
-正在尝试 Electron + Vue + Element UI
+作者被炖成鸽子肉汤了……
 
 # 所以现在怎么办？
 
