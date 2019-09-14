@@ -1,4 +1,4 @@
-// this is a useless main.js because i used electron-builder vue-cli extension
+// this is a useless main.js because i used nklayman/vue-cli-plugin-electron-builder extension
 
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
