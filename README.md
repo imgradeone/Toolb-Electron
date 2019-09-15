@@ -4,11 +4,11 @@
 
 电脑上的 Toolb，即将到来。
 
-![](https://img.shields.io/badge/oof-cancelled-fa4694.svg)
+![](https://img.shields.io/badge/status-WIP-fa4694.svg)
 
 # 目前的进度
 
-作者被炖成鸽子肉汤了……
+画 UI 中...
 
 # 所以现在怎么办？
 
