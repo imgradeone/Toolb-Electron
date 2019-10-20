@@ -8,7 +8,7 @@
 
 # 目前的进度
 
-画 UI 中...
+DAILY REVERTING
 
 # 所以现在怎么办？
 

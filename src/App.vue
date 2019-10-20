@@ -1,78 +1,36 @@
 <template>
-  <div class="app">
-    <hello-world class="app__hello"
-      title="Welcome to your Vue MDC Adapter App"
-      :vmaLinks="vmaLinks"
-      :mdcLinks="mdcLinks">
-    </hello-world>
-  </div>
+  <v-app>
+    <v-app-bar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span>Vuetify</span>
+        <span class="font-weight-light">MATERIAL DESIGN</span>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        text
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+      >
+        <span class="mr-2">Latest Release</span>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld';
 
-  export default {
-    data () {
-      return {
-        vmaLinks: [
-          {
-            title: 'Documentation',
-            url: 'https://stasson.github.io/vue-mdc-adapter'
-          },
-          {
-            title: 'GitHub',
-            url: 'https://github.com/stasson/vue-mdc-adapter'
-          },
-          {
-            title: 'Twitter',
-            url: 'https://twitter.com/vuemdc'
-          },
-          {
-            title: 'Chat',
-            url: 'https://gitter.im/vue-mdc-adapter/Lobby'
-          }
-        ],
-        mdcLinks: [
-          {
-            title: 'Documentation',
-            url: 'https://material.io/components/web/'
-          },
-          {
-            title: 'GitHub',
-            url: 'https://github.com/material-components/material-components-web'
-          },
-          {
-            title: 'Guidelines',
-            url: 'https://material.io/guidelines'
-          },
-          {
-            title: 'Awesome Material Components',
-            url: 'https://github.com/webdenim/awesome-material-components'
-          }
-        ]
-      }
-    },
-    components: { HelloWorld }
-  }
+export default {
+  name: 'App',
+  components: {
+    HelloWorld,
+  },
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style lang="scss">
-  // First, set the value for variable
-  $mdc-typography-font-family: "Roboto Mono", monospace;
-
-  // Then, import required files
-  @import "@material/typography/mixins";
-
-  html {
-    width: 100%;
-    height: 100%;
-  }
-
-  body {
-    @include mdc-typography(body2);
-
-    width: 100%;
-    min-height: 100%;
-    margin: 0;
-  }
-</style>

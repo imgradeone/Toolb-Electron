@@ -1,121 +1,142 @@
 <template>
-  <div class="hello">
-    <div class="hello__hero">
-      <mdc-layout-grid>
-        <mdc-layout-cell desktop="12" tablet="8" phone="4">
-          <img class="hello__logo" src="../assets/logo.png" alt="Vue MDC Adapter">
-          <h1 class="hello__title">{{ title }}</h1>
-          <p class="hello__blurb">
-            <a href="https://github.com/webdenim/vue-cli-plugin-material" target="_blank" rel="noopener">vue-cli-plugin-material</a> is a Vue CLI plugin to help you get started with Material Design Components for Vue.js. It's created and maintained by <a href="https://twitter.com/rustemgareev" target="_blank" rel="noopener">Rustem Gareev</a> at <a href="https://www.webdenim.io/" target="_blank" rel="noopener">Webdenim</a>.
-            <a href="https://github.com/rustemgareev" target="_blank" rel="noopener">Follow me on GitHub</a> to get news and updates on other Vue.js and Material Design-related stuff.
-          </p>
-        </mdc-layout-cell>
-      </mdc-layout-grid>
-    </div>
+  <v-container>
+    <v-layout
+      text-center
+      wrap
+    >
+      <v-flex xs12>
+        <v-img
+          :src="require('../assets/logo.svg')"
+          class="my-3"
+          contain
+          height="200"
+        ></v-img>
+      </v-flex>
 
-    <div class="hello__content">
-      <mdc-layout-grid>
-        <mdc-layout-cell desktop="6" tablet="4" phone="4">
-          <h3 class="hello__subtitle">Vue MDC Adapter Links</h3>
-          <ul class="hello__links">
-            <li v-for="(link, idx) in vmaLinks" :key="idx">
-              <a :href="link.url" target="_blank" rel="noopener">{{ link.title }}</a>
-            </li>
-          </ul>
-        </mdc-layout-cell>
+      <v-flex mb-4>
+        <h1 class="display-2 font-weight-bold mb-3">
+          Welcome to Vuetify
+        </h1>
+        <p class="subheading font-weight-regular">
+          For help and collaboration with other Vuetify developers,
+          <br>please join our online
+          <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
+        </p>
+      </v-flex>
 
-        <mdc-layout-cell desktop="6" tablet="4" phone="4">
-          <h3 class="hello__subtitle">Material Components Links</h3>
-          <ul class="hello__links">
-            <li v-for="(link, idx) in mdcLinks" :key="idx">
-              <a :href="link.url" target="_blank" rel="noopener">{{ link.title }}</a>
-            </li>
-          </ul>
-        </mdc-layout-cell>
-      </mdc-layout-grid>
-    </div>
-  </div>
+      <v-flex
+        mb-5
+        xs12
+      >
+        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in whatsNext"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+
+      <v-flex
+        xs12
+        mb-5
+      >
+        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(link, i) in importantLinks"
+            :key="i"
+            :href="link.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ link.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+
+      <v-flex
+        xs12
+        mb-5
+      >
+        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(eco, i) in ecosystem"
+            :key="i"
+            :href="eco.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ eco.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-  export default {
-    name: 'HelloWorld',
-    props: {
-      title: String,
-      vmaLinks: Array,
-      mdcLinks: Array
-    }
-  }
+export default {
+  data: () => ({
+    ecosystem: [
+      {
+        text: 'vuetify-loader',
+        href: 'https://github.com/vuetifyjs/vuetify-loader',
+      },
+      {
+        text: 'github',
+        href: 'https://github.com/vuetifyjs/vuetify',
+      },
+      {
+        text: 'awesome-vuetify',
+        href: 'https://github.com/vuetifyjs/awesome-vuetify',
+      },
+    ],
+    importantLinks: [
+      {
+        text: 'Documentation',
+        href: 'https://vuetifyjs.com',
+      },
+      {
+        text: 'Chat',
+        href: 'https://community.vuetifyjs.com',
+      },
+      {
+        text: 'Made with Vuetify',
+        href: 'https://madewithvuejs.com/vuetify',
+      },
+      {
+        text: 'Twitter',
+        href: 'https://twitter.com/vuetifyjs',
+      },
+      {
+        text: 'Articles',
+        href: 'https://medium.com/vuetify',
+      },
+    ],
+    whatsNext: [
+      {
+        text: 'Explore components',
+        href: 'https://vuetifyjs.com/components/api-explorer',
+      },
+      {
+        text: 'Select a layout',
+        href: 'https://vuetifyjs.com/layout/pre-defined',
+      },
+      {
+        text: 'Frequently Asked Questions',
+        href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
+      },
+    ],
+  }),
+};
 </script>
-
-<style lang="scss">
-  // First, set the value for variable
-  $mdc-layout-grid-max-width: 800px;
-
-  // Then, import required files
-  @import "@material/layout-grid/mdc-layout-grid";
-  @import "@material/rtl/mixins";
-  @import "@material/theme/color-palette";
-  @import "@material/theme/mixins";
-
-  .hello {
-    &__hero {
-      @include mdc-theme-prop(color, text-primary-on-dark);
-
-      padding: 2.5rem 0;
-      background-color: $material-color-grey-900;
-
-      @media (min-width: 480px) {
-        text-align: center;
-      }
-
-      a {
-        @include mdc-theme-prop(color, text-primary-on-dark);
-      }
-    }
-
-    &__logo {
-      width: 144px;
-
-      @media (min-width: 840px) {
-        width: 192px;
-      }
-    }
-
-    &__title {
-      margin-top: 0;
-      font-size: 2.125rem;
-      font-weight: 400;
-      line-height: 2.625rem;
-    }
-
-    &__blurb {
-      line-height: 1.5rem;
-    }
-
-    &__content {
-      padding: 2.5rem 0;      
-    }
-
-    &__subtitle {
-      margin: 0;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.75rem;
-    }
-
-    &__links {
-      @include mdc-rtl-reflexive-box(padding, left, 0);
-
-      list-style: inside disc;
-
-      li {
-        padding-bottom: .5rem;
-      }
-
-      a {
-        @include mdc-theme-prop(color, text-primary-on-background);
-      }
-    }
-  }
-</style>
