@@ -51,7 +51,7 @@ html {
   /*定义滑块 内阴影+圆角*/
   ::-webkit-scrollbar-thumb {
     border-radius: 99px;
-    background-color: #cccccc;
+    background-color: #e0e0e0;
   }
 }
 
