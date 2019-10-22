@@ -1429,6 +1429,11 @@
   resolved "https://registry.npm.taobao.org/@material/typography/download/@material/typography-0.35.0.tgz#23ad7eb7c9789e69c7c3fa54df8fc311cd7fc4b1"
   integrity sha1-I61+t8l4nmnHw/pU34/DEc1/xLE=
 
+"@mdi/font@^4.5.95":
+  version "4.5.95"
+  resolved "https://registry.npm.taobao.org/@mdi/font/download/@mdi/font-4.5.95.tgz#43c0d2e7b08d4221a778f58d899455d0c45916ed"
+  integrity sha1-Q8DS57CNQiGnePWNiZRV0MRZFu0=
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
