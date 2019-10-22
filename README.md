@@ -39,4 +39,9 @@ DAILY REVERTING
 - [ ] 基本 UI 设计，采用 Vuetify.js
 - [ ] JS 相关开发
 - [ ] Electron 无边框窗口的按钮事件
-- [ ] 创作中心 Lite
+- [ ] 创作中心 Lite 及页面的重新布局
+- [ ] 动态 Beta 及页面的重新布局
+
+# License
+
+Toolb Electron 遵循 MIT License。查看 [LICENSE](./LICENSE) 文件了解更多。
