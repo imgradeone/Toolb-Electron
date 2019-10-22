@@ -55,6 +55,8 @@ html {
   }
 }
 
+/* Thank you, hilanmiao. */
+
 .v-app-bar {
   -webkit-user-select: none;
 }

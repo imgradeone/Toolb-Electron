@@ -1,22 +1,22 @@
-![](https://imgradeone.files.wordpress.com/2019/07/elec-toolb.png)
-
 # Toolb Electron
+
+![oooooo](https://imgradeone.files.wordpress.com/2019/07/elec-toolb.png)
 
 电脑上的 Toolb，即将到来。
 
-![](https://img.shields.io/badge/status-WIP-fa4694.svg)
+![Status WIP](https://img.shields.io/badge/status-WIP-fa4694.svg)
 
-# 目前的进度
+## 目前的进度
 
 DAILY REVERTING
 
-# 所以现在怎么办？
+## 所以现在怎么办
 
-## 可以先尝试一下 Toolb 的 Android 版。
+可以先尝试一下 Toolb 的 Android 版。
 
-<a href="https://github.com/imgradeone/ToolbReleases/releases/latest">![](https://img.shields.io/badge/download-forAndroid-0080ff.svg?style=for-the-badge)</a>
+<a href="https://github.com/imgradeone/ToolbReleases/releases/latest">![download](https://img.shields.io/badge/download-forAndroid-0080ff.svg?style=for-the-badge)</a>
 
-# 加入项目开发
+## 加入项目开发
 
 由于 imgradeone 几乎没学过 JavaScript，所以这个项目几乎是白手起家，希望大佬给予帮助。
 
@@ -41,7 +41,8 @@ DAILY REVERTING
 - [ ] Electron 无边框窗口的按钮事件
 - [ ] 创作中心 Lite 及页面的重新布局
 - [ ] 动态 Beta 及页面的重新布局
+- [ ] 以及更多
 
-# License
+## License
 
 Toolb Electron 遵循 MIT License。查看 [LICENSE](./LICENSE) 文件了解更多。
