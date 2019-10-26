@@ -8,7 +8,7 @@
 
 ## 目前的进度
 
-DAILY REVERTING
+制作前端 ing...
 
 ## 所以现在怎么办
 
@@ -31,7 +31,6 @@ DAILY REVERTING
 ```
 > yarn
 > yarn electron:serve
-> yarn electron:build
 ```
 
 ## 注：目前需要开发的功能
@@ -47,3 +46,7 @@ DAILY REVERTING
 ## License
 
 Toolb Electron 遵循 MIT License。查看 [LICENSE](./LICENSE) 文件了解更多。
+
+## 其他须知
+
+虽然这个项目定位为 “一个优化 bilibili 网页版的项目”，但可能随时会停止支持。

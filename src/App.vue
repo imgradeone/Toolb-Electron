@@ -18,6 +18,12 @@
     <v-content>
       <HelloWorld />
     </v-content>
+    <v-footer
+      color="white"
+      app
+    >
+      <span class="black--text">Toolb Electron 开发版本  Electron 版本 <span id="electron-version">；Chromium 版本 <span id="chrome-version"></span></span>
+    </v-footer>
   </v-app>
 </template>
 
@@ -45,12 +51,12 @@ html {
 
   /*定义滚动条轨道 内阴影+圆角*/
   ::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   /*定义滑块 内阴影+圆角*/
   ::-webkit-scrollbar-thumb {
-    border-radius: 99px;
+    border-radius: 0px;
     background-color: #e0e0e0;
   }
 }
