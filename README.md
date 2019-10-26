@@ -47,6 +47,8 @@
 
 Toolb Electron 遵循 MIT License。查看 [LICENSE](./LICENSE) 文件了解更多。
 
+同时，由于这是一个关于 bilibili 的项目，使用时您还应该遵守哔哩哔哩的 [用户协议](https://www.bilibili.com/protocal/licence.html) 和 [隐私政策](https://www.bilibili.com/blackboard/privacy-pc.html)。
+
 ## 其他须知
 
 虽然这个项目定位为 “一个优化 bilibili 网页版的项目”，但可能随时会停止支持。
