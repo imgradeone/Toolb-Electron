@@ -19,10 +19,14 @@
       <HelloWorld />
     </v-content>
     <v-footer
-      color="white"
+      color="orange"
       app
     >
-      <span class="black--text">Toolb Electron 开发版本  Electron 版本 <span id="electron-version">；Chromium 版本 <span id="chrome-version"></span></span>
+      <span class="white--text">Toolb Electron 开发版本</span>
+      <v-spacer />
+      <v-btn text>
+        <a href="https://github.com/imgradeone/Toolb-Electron" target="_blank">参与开发</a>
+      </v-btn>
     </v-footer>
   </v-app>
 </template>
